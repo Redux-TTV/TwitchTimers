@@ -1,0 +1,9 @@
+C:\Users\Admin\Documents\code\timerProject\timerApp\timerApp\bin\Debug\timerApp.exe.config
+C:\Users\Admin\Documents\code\timerProject\timerApp\timerApp\bin\Debug\timerApp.exe
+C:\Users\Admin\Documents\code\timerProject\timerApp\timerApp\bin\Debug\timerApp.pdb
+C:\Users\Admin\Documents\code\timerProject\timerApp\timerApp\obj\Debug\timerApp.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\code\timerProject\timerApp\timerApp\obj\Debug\timerApp.Form1.resources
+C:\Users\Admin\Documents\code\timerProject\timerApp\timerApp\obj\Debug\timerApp.Properties.Resources.resources
+C:\Users\Admin\Documents\code\timerProject\timerApp\timerApp\obj\Debug\timerApp.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\code\timerProject\timerApp\timerApp\obj\Debug\timerApp.exe
+C:\Users\Admin\Documents\code\timerProject\timerApp\timerApp\obj\Debug\timerApp.pdb
