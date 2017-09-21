@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.btnCustom = new System.Windows.Forms.Button();
             this.tbCustomMins = new System.Windows.Forms.TextBox();
-            this.btnStart = new System.Windows.Forms.Button();
+            this.btn5 = new System.Windows.Forms.Button();
             this.btn10 = new System.Windows.Forms.Button();
             this.btn15 = new System.Windows.Forms.Button();
             this.btn20 = new System.Windows.Forms.Button();
@@ -79,15 +79,15 @@
             this.tbCustomMins.TabIndex = 1;
             this.tbCustomMins.TextChanged += new System.EventHandler(this.tbCustomMins_TextChanged);
             // 
-            // btnStart
+            // btn5
             // 
-            this.btnStart.Location = new System.Drawing.Point(14, 76);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(100, 25);
-            this.btnStart.TabIndex = 2;
-            this.btnStart.Text = "5 Minutes";
-            this.btnStart.UseVisualStyleBackColor = true;
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            this.btn5.Location = new System.Drawing.Point(14, 76);
+            this.btn5.Name = "btn5";
+            this.btn5.Size = new System.Drawing.Size(100, 25);
+            this.btn5.TabIndex = 2;
+            this.btn5.Text = "5 Minutes";
+            this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btn10
             // 
@@ -132,7 +132,7 @@
             // lbCurrentTime
             // 
             this.lbCurrentTime.AutoSize = true;
-            this.lbCurrentTime.Location = new System.Drawing.Point(19, 22);
+            this.lbCurrentTime.Location = new System.Drawing.Point(28, 22);
             this.lbCurrentTime.Name = "lbCurrentTime";
             this.lbCurrentTime.Size = new System.Drawing.Size(72, 13);
             this.lbCurrentTime.TabIndex = 0;
@@ -300,7 +300,7 @@
             this.Controls.Add(this.btn20);
             this.Controls.Add(this.btn15);
             this.Controls.Add(this.btn10);
-            this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.btn5);
             this.Controls.Add(this.btnCustom);
             this.Name = "Form1";
             this.Text = "Timer Control";
@@ -326,7 +326,7 @@
 
         private System.Windows.Forms.Button btnCustom;
         private System.Windows.Forms.TextBox tbCustomMins;
-        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Button btn5;
         private System.Windows.Forms.Button btn10;
         private System.Windows.Forms.Button btn15;
         private System.Windows.Forms.Button btn20;

@@ -18,7 +18,8 @@ namespace timerApp
         TimeSpan countdownTime = new TimeSpan(0, 0, 0);
         TimeSpan targetTime = new TimeSpan(0, 0, 0);
         TimeSpan customTime;
-        string fpath = @"D:\\Stream_Stuff\Stream_txts\timers.txt";
+        string fpath = @"C:\\Stream_txts\";
+        string fname = "timers.txt";
         string message;
 
         public Form1()
@@ -88,7 +89,7 @@ namespace timerApp
             //customTime = new TimeSpan(0, Int32.Parse(tbCustomMins.Text), Int32.Parse(tbCustomSecs.Text));            
         }
 
-        private void btnStart_Click(object sender, EventArgs e)
+        private void btn5_Click(object sender, EventArgs e)
         {
             message = "Stream Starting Soon!";
             customTime = new TimeSpan(0, 5, 0);
@@ -185,14 +186,18 @@ namespace timerApp
                 timeMod
             });
 
-            System.IO.File.WriteAllText(fpath, text);
+            if (!System.IO.File.Exists(fpath))
+            {
+                System.IO.Directory.CreateDirectory(fpath);
+            }
+            System.IO.File.WriteAllText(fpath+fname, text);
         }
 
         private void cleanTimeFile()
         {
-            if (System.IO.File.Exists(fpath))
+            if (System.IO.File.Exists(fpath+fname))
             {
-                System.IO.File.Delete(fpath);
+                System.IO.File.Delete(fpath+fname);
             } 
         }
 

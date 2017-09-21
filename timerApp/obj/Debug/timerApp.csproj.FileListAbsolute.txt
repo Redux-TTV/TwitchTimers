@@ -7,3 +7,16 @@ C:\Users\Admin\Documents\code\timerProject\timerApp\timerApp\obj\Debug\timerApp.
 C:\Users\Admin\Documents\code\timerProject\timerApp\timerApp\obj\Debug\timerApp.csproj.GenerateResource.Cache
 C:\Users\Admin\Documents\code\timerProject\timerApp\timerApp\obj\Debug\timerApp.exe
 C:\Users\Admin\Documents\code\timerProject\timerApp\timerApp\obj\Debug\timerApp.pdb
+D:\Code\twitchTimers\timerApp\bin\Debug\timerApp.exe.config
+D:\Code\twitchTimers\timerApp\obj\Debug\timerApp.exe
+D:\Code\twitchTimers\timerApp\obj\Debug\timerApp.pdb
+D:\Code\twitchTimers\timerApp\bin\Debug\timerApp.exe.manifest
+D:\Code\twitchTimers\timerApp\bin\Debug\timerApp.application
+D:\Code\twitchTimers\timerApp\bin\Debug\timerApp.exe
+D:\Code\twitchTimers\timerApp\bin\Debug\timerApp.pdb
+D:\Code\twitchTimers\timerApp\obj\Debug\timerApp.csprojResolveAssemblyReference.cache
+D:\Code\twitchTimers\timerApp\obj\Debug\timerApp.Form1.resources
+D:\Code\twitchTimers\timerApp\obj\Debug\timerApp.Properties.Resources.resources
+D:\Code\twitchTimers\timerApp\obj\Debug\timerApp.csproj.GenerateResource.Cache
+D:\Code\twitchTimers\timerApp\obj\Debug\timerApp.exe.manifest
+D:\Code\twitchTimers\timerApp\obj\Debug\timerApp.application
