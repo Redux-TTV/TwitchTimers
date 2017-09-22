@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="timerApp.exe" version="1.1.0.0" publicKeyToken="df884061b59c0f5b" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="timerApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="timerApp.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="timerApp.exe" size="19936">
+      <assemblyIdentity name="timerApp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>OP65K+TR3FSoTQ2TR95czfjHeFGod1gU5ObUeKdn02w=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="timerApp.exe.config" size="1050">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cuIM7VMWLMRH1TR5ayR+YvF5awhyZ5TSK8wa0ZzxKKc=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-4N9J3VE\Admin" issuerKeyHash="4f2f75f9dff185ea6f2c7fbb0db982a9f4fc4c09" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>mrfNQjXHfmPTp7lm2HfqBMyZlZEtxynOt8ULD/616jA=</DigestValue></Reference></SignedInfo><SignatureValue>DpyP4aCgM3a/JCu/jCDTr/ckw3nIqV2Kt52VU5H2Yb+17qhM/LDEuhpEZljAe5TPtTEKcSZ54GtXhbgoBnWAo/0OzVJ1aFw3n4Xw+PUu+XAUzwCuoldcAO2W5hQ29i2IIuXOFlbz92iMsviFvOBZHh4sYMIW7p28XFKSaurIseU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uatl20fHP//QjaF6dGoKt6pLpk9zEtTdDZg/zA2FKCZeMGCq9Ed4EwlHeTuN3t1bsJjstlFjTeBTwiP5q/qOitEYBe+ur3YwY+CC+ne9KyweR+NQ5OCimnfw49j3FIpkMlr126zxB+i4LMMgusmTIDZ12+henYL/Xa0smazQeAE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="30eab5fe0f0bc5b7ce29c72d919599cc04ea77d866b9a7d3637ec73542cdb79a" Description="" Url=""><as:assemblyIdentity name="timerApp.exe" version="1.1.0.0" publicKeyToken="df884061b59c0f5b" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-4N9J3VE\Admin</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>wI0b3L4hZxk8AqpTpyF6jQ8VAkErT4PMQ38LWNd5+I0=</DigestValue></Reference></SignedInfo><SignatureValue>CyNbCDskndrNiEHjkm4PAQKAcfbNN+ds82oP/aGRcB8VXbAPKud8ZXK8/pbJHBxPpZd7QlyIljm530h+TQoWDs+SsoxFsdRc+8wnOmotojTHae3mm5Qfl34SqIozhD5t5PUdx5LPO4ORaNr23M7PYI4dh+K5xuKmcNXCGcadBWc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uatl20fHP//QjaF6dGoKt6pLpk9zEtTdDZg/zA2FKCZeMGCq9Ed4EwlHeTuN3t1bsJjstlFjTeBTwiP5q/qOitEYBe+ur3YwY+CC+ne9KyweR+NQ5OCimnfw49j3FIpkMlr126zxB+i4LMMgusmTIDZ12+henYL/Xa0smazQeAE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQWvrLriG+VI1DBxnXLuheIzANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADQATgA5AEoAMwBWAEUAXABBAGQAbQBpAG4wHhcNMTcwOTIwMjMxMDU0WhcNMTgwOTIxMDUxMDU0WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtADQATgA5AEoAMwBWAEUAXABBAGQAbQBpAG4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALmrZdtHxz//0I2henRqCreqS6ZPcxLU3Q2YP8wNhSgmXjBgqvRHeBMJR3k7jd7dW7CY7LZRY03gU8Ij+av6jorRGAXvrq92MGPggvp3vSssHkfjUOTgopp38OPY9xSKZDJa9dus8QfouCzDILrJkyA2ddvoXp2C/12tLJms0HgBAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAZMIRzgKvQ9jBbz6pbn1Zv0MsdrlvMT2pLP1qiygY8Yfs+tjzPl+8DGewHDXxEf0dbDHFDQ+3jY6CW+cCYhccDJbLvr+GeTm7jczCqDn+BWJ/sYTakifQNqXN2yIxfgsR7/PpD6RzvN1NihNFEt4tdPgEvQMzG5l3bdle6LeKtcU=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
