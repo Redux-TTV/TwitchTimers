@@ -119,7 +119,6 @@ namespace timerApp
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            //message = "Stream Starting Soon!";
             customTime = new TimeSpan(0, 5, 0);
             targetTime = getTargetTime(customTime);
             startTime = DateTime.Now;
@@ -129,7 +128,6 @@ namespace timerApp
 
         private void btn10_Click(object sender, EventArgs e)
         {
-            //message = "Returning in: ";
             customTime = new TimeSpan(0, 10, 0);
             targetTime = getTargetTime(customTime);
             startTime = DateTime.Now;
@@ -138,7 +136,6 @@ namespace timerApp
 
         private void btn15_Click(object sender, EventArgs e)
         {
-            //message = "Walking the dog! Be back in: ";
             customTime = new TimeSpan(0, 15, 0);
             targetTime = getTargetTime(customTime);
             startTime = DateTime.Now;
@@ -147,7 +144,6 @@ namespace timerApp
 
         private void btn20_Click(object sender, EventArgs e)
         {
-            //message = "Extended Break. Be back in: ";
             customTime = new TimeSpan(0, 20, 0);
             targetTime = getTargetTime(customTime);
             startTime = DateTime.Now;
@@ -281,9 +277,9 @@ namespace timerApp
 
         private void cleanTimeFile()
         {
-            if (System.IO.File.Exists(fpath + fname))
+            if (File.Exists(fpath + fname))
             {
-                System.IO.File.WriteAllText(fpath + fname, "");
+                File.WriteAllText(fpath + fname, "");
             }
         }
 
@@ -291,14 +287,14 @@ namespace timerApp
         {
             string userDocuments = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             string twitchTimerFolder = userDocuments + "\\TwitchTimers";
-            if (!System.IO.Directory.Exists(twitchTimerFolder))
+            if (!Directory.Exists(twitchTimerFolder))
             {
-                System.IO.Directory.CreateDirectory(twitchTimerFolder);
-                System.IO.File.Create(System.IO.Path.Combine(twitchTimerFolder, "TwitchTimers.txt"));
+                Directory.CreateDirectory(twitchTimerFolder);
+                File.Create(Path.Combine(twitchTimerFolder, "TwitchTimers.txt"));
             }
             else
             {
-                System.IO.File.Create(System.IO.Path.Combine(twitchTimerFolder, "TwitchTimers.txt")).Close();
+                File.Create(Path.Combine(twitchTimerFolder, "TwitchTimers.txt")).Close();
             }
             
             fpath = twitchTimerFolder.ToString()+"\\";
