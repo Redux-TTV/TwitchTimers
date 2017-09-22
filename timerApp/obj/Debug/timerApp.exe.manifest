@@ -49,17 +49,17 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6ZU/hT+AewPvh4XyEx9Mr+b7Mh/9WWTpOavIym71wNE=</dsig:DigestValue>
+        <dsig:DigestValue>ZrOaHRLc0aQ8COqqQ1+pY1P0/5jZnO5wadEVIraNyok=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="timerApp.exe.config" size="1050">
+  <file name="timerApp.exe.config" size="1031">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>cuIM7VMWLMRH1TR5ayR+YvF5awhyZ5TSK8wa0ZzxKKc=</dsig:DigestValue>
+      <dsig:DigestValue>zkP+jntM4csuh4CdPVpb+WKclzkbjxMCSbgnrWc0alA=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

@@ -38,6 +38,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lbCurrentTime = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tbCustomHrs = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tbCustomSecs = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,17 +51,15 @@
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.btnStop = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cbClear = new System.Windows.Forms.CheckBox();
+            this.tbCustomMessage = new System.Windows.Forms.TextBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.fbdChooseStorage = new System.Windows.Forms.FolderBrowserDialog();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.btnBrowse = new System.Windows.Forms.Button();
-            this.tbCustomHrs = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cbClear = new System.Windows.Forms.CheckBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnClear = new System.Windows.Forms.Button();
             this.tbStorageFolder = new System.Windows.Forms.TextBox();
-            this.tbCustomMessage = new System.Windows.Forms.TextBox();
+            this.btnBrowse = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -160,6 +160,22 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Custom Time";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(9, 42);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(18, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Hr";
+            // 
+            // tbCustomHrs
+            // 
+            this.tbCustomHrs.Location = new System.Drawing.Point(6, 19);
+            this.tbCustomHrs.Name = "tbCustomHrs";
+            this.tbCustomHrs.Size = new System.Drawing.Size(25, 20);
+            this.tbCustomHrs.TabIndex = 6;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -255,6 +271,35 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Away Message";
             // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(225, 17);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(86, 41);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Clear message file on complete";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // cbClear
+            // 
+            this.cbClear.AutoSize = true;
+            this.cbClear.Location = new System.Drawing.Point(209, 31);
+            this.cbClear.Name = "cbClear";
+            this.cbClear.Size = new System.Drawing.Size(15, 14);
+            this.cbClear.TabIndex = 17;
+            this.cbClear.UseVisualStyleBackColor = true;
+            // 
+            // tbCustomMessage
+            // 
+            this.tbCustomMessage.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::timerApp.Properties.Settings.Default, "tbAwayMessage", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbCustomMessage.Location = new System.Drawing.Point(6, 19);
+            this.tbCustomMessage.Multiline = true;
+            this.tbCustomMessage.Name = "tbCustomMessage";
+            this.tbCustomMessage.Size = new System.Drawing.Size(200, 36);
+            this.tbCustomMessage.TabIndex = 13;
+            this.tbCustomMessage.Text = global::timerApp.Properties.Settings.Default.tbAwayMessage;
+            this.tbCustomMessage.TextChanged += new System.EventHandler(this.tbCustomMessage_TextChanged);
+            // 
             // btnExit
             // 
             this.btnExit.Location = new System.Drawing.Point(329, 211);
@@ -280,6 +325,15 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Storage Folder";
             // 
+            // tbStorageFolder
+            // 
+            this.tbStorageFolder.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::timerApp.Properties.Settings.Default, "tbStorageText", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.tbStorageFolder.Location = new System.Drawing.Point(7, 15);
+            this.tbStorageFolder.Name = "tbStorageFolder";
+            this.tbStorageFolder.Size = new System.Drawing.Size(322, 20);
+            this.tbStorageFolder.TabIndex = 1;
+            this.tbStorageFolder.Text = global::timerApp.Properties.Settings.Default.tbStorageText;
+            // 
             // btnBrowse
             // 
             this.btnBrowse.Location = new System.Drawing.Point(335, 13);
@@ -290,40 +344,6 @@
             this.btnBrowse.UseVisualStyleBackColor = true;
             this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
-            // tbCustomHrs
-            // 
-            this.tbCustomHrs.Location = new System.Drawing.Point(6, 19);
-            this.tbCustomHrs.Name = "tbCustomHrs";
-            this.tbCustomHrs.Size = new System.Drawing.Size(25, 20);
-            this.tbCustomHrs.TabIndex = 6;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 42);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(18, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Hr";
-            // 
-            // cbClear
-            // 
-            this.cbClear.AutoSize = true;
-            this.cbClear.Location = new System.Drawing.Point(209, 31);
-            this.cbClear.Name = "cbClear";
-            this.cbClear.Size = new System.Drawing.Size(15, 14);
-            this.cbClear.TabIndex = 17;
-            this.cbClear.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.Location = new System.Drawing.Point(225, 17);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 41);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Clear message file on complete";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // btnClear
             // 
             this.btnClear.Location = new System.Drawing.Point(224, 211);
@@ -333,26 +353,6 @@
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
-            // tbStorageFolder
-            // 
-            this.tbStorageFolder.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::timerApp.Properties.Settings.Default, "tbStorageText", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbStorageFolder.Location = new System.Drawing.Point(7, 15);
-            this.tbStorageFolder.Name = "tbStorageFolder";
-            this.tbStorageFolder.Size = new System.Drawing.Size(322, 20);
-            this.tbStorageFolder.TabIndex = 1;
-            this.tbStorageFolder.Text = global::timerApp.Properties.Settings.Default.tbStorageText;
-            // 
-            // tbCustomMessage
-            // 
-            this.tbCustomMessage.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::timerApp.Properties.Settings.Default, "tbAwayMessage", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.tbCustomMessage.Location = new System.Drawing.Point(6, 19);
-            this.tbCustomMessage.Multiline = true;
-            this.tbCustomMessage.Name = "tbCustomMessage";
-            this.tbCustomMessage.Size = new System.Drawing.Size(200, 36);
-            this.tbCustomMessage.TabIndex = 13;
-            this.tbCustomMessage.Text = global::timerApp.Properties.Settings.Default.tbAwayMessage;
-            this.tbCustomMessage.TextChanged += new System.EventHandler(this.tbCustomMessage_TextChanged);
             // 
             // Form1
             // 

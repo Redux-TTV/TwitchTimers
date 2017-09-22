@@ -161,6 +161,7 @@ namespace timerApp
 
         private void btnClear_Click(object sender, EventArgs e)
         {
+            timer2.Stop();
             cleanTimeFile();
         }
 

@@ -37,7 +37,7 @@ namespace timerApp.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Returning in:")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string tbAwayMessage {
             get {
                 return ((string)(this["tbAwayMessage"]));

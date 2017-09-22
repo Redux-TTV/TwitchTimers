@@ -6,7 +6,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="tbAwayMessage" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Returning in:</Value>
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>
